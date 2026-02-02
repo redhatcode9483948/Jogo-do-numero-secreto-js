@@ -35,7 +35,7 @@ function verificarChute() {
 
     if (chute === numeroSecreto) {
         exibirTextoNaTela('h1', 'Acertou!');
-        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'; //operador ternário 
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`;
         exibirTextoNaTela('p', mensagemTentativas);
        
@@ -69,4 +69,5 @@ function reiniciarJogo () {
 //Aqui estammos dando valores aos parâmetro da função acima
 //exibirTextoNaTela('h1', 'O jogo do número secreto'); todo lugar que tiver "tag" vai ser substituído pelo valor "h1"
 //exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');// todo lugar que tiver "tag" vai ser substituído pelo valor "p"
+
 
